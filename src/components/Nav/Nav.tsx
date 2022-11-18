@@ -10,11 +10,11 @@ const navMenu = [
    },
    {
       name: "Thực đơn",
-      link: "/menu",
+      link: "#menu",
    },
    {
       name: "Hoạt động",
-      link: "/activity",
+      link: "#activity",
    },
    {
       name: "Về chúng tôi",

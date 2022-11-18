@@ -16,7 +16,7 @@ const Activity = () => {
                <h3 className="font-bold text-[32px] text-blackColor mt-2">
                   Những gì chúng tôi phục vụ
                </h3>
-               <p className="font-medium text-[22px] text-blackColor text-opacity-70 max-w-[610px] mx-auto mt-6">
+               <p className="font-medium text-[22px] text-blackColor text-opacity-70 max-w-[650px] mx-auto mt-6">
                   Chất lượng sản phẩm là ưu tiên của chúng tôi và luôn đảm bảo
                   an toàn cho đến khi nó nằm trong tay bạn.
                </p>
