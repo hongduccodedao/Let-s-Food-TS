@@ -4,7 +4,28 @@
 
 @layer base {
    body {
-      @apply font-readex;
+      @apply font-readex scroll-smooth;
+   }
+
+   /* custom scrollbar */
+
+   ::-webkit-scrollbar {
+      width: 10px;
+      height: 10px;
+   }
+
+   ::-webkit-scrollbar-track {
+      background: var(--background-color);
+      border-radius: 10px;
+   }
+
+   ::-webkit-scrollbar-thumb {
+      background-image: linear-gradient(
+         90deg,
+         var(--yellow-color) 0%,
+         var(--orange-color) 100%
+      );
+      border-radius: 10px;
    }
 }
 

@@ -14,7 +14,7 @@ const Menu = () => {
    // console.log(data);
 
    return (
-      <div id="activity" className="">
+      <div id="menu" className="">
          <div className="max-w-[1200px] mx-auto mt-[80px]">
             <div className="text-center">
                <h5 className="font-medium text-[22px] text-yellow">
