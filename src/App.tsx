@@ -1,21 +1,22 @@
-import Activity from "./components/Activity/Activity";
-import Banner from "./components/Banner/Banner";
-import Comment from "./components/Comment/Comment";
-import Footer from "./components/Footer/Footer";
-import Header from "./components/Heder/Header";
-import Menu from "./components/Menu/Menu";
-import Nav from "./components/Nav/Nav";
+import { Suspense } from "react";
+import { Route, Routes } from "react-router-dom";
+import HomePage from "./Pages/HomePage";
 
 function App() {
-   return <div className="App">
-      <Nav />
-      <Header />
-      <Activity />
-      <Menu /> 
-      <Comment />
-      <Banner />
-      <Footer />
-   </div>;
+   return (
+      <div className="App">
+         <Suspense
+            fallback={
+               <div className="w-screen h-screen bg-backgroundColor">
+                  <div className="w-10 h-10 rounded-full border-4 border-orange border-t-transparent border-t-4 mx-auto"></div>
+               </div>
+            }>
+            <Routes>
+               <Route path="/" element={<HomePage />} />
+            </Routes>
+         </Suspense>
+      </div>
+   );
 }
 
 export default App;

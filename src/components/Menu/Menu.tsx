@@ -11,7 +11,7 @@ import ProductCard from "../ProductCard/ProductCard";
 const Menu = () => {
    const { data, error } = useSWR("http://localhost:3000/product/get", fetcher);
 
-   // console.log(data);
+   console.log(data);
 
    return (
       <div id="menu" className="">
@@ -29,12 +29,11 @@ const Menu = () => {
             </div>
 
             <div className="mt-[60px] grid grid-cols-4 gap-3">
-               {/* productCard */}
-               <ProductCard />
-               <ProductCard />
-               <ProductCard />
-               <ProductCard />
-               <ProductCard />
+               {
+                  data?.map((productItem) => (
+                     <ProductCard productItem={productItem} />
+                  ))
+               }
             </div>
          </div>
       </div>
