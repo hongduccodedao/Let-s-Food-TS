@@ -1,6 +1,7 @@
-import { Suspense } from "react";
+import { lazy, Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
-import HomePage from "./Pages/HomePage";
+
+const HomePage = lazy(() => import("./Pages/HomePage"));
 
 function App() {
    return (
