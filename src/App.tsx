@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 
 const HomePage = lazy(() => import("./Pages/HomePage"));
 const PageNotFound = lazy(() => import("./Pages/PageNotFound"));
+const Login = lazy(() => import("./Pages/Login"));
 
 function App() {
    return (
@@ -19,6 +20,9 @@ function App() {
 
                {/* Page Not Found */}
                <Route path="*" element={<PageNotFound />} />
+
+               {/* Login */}
+               <Route path="/login" element={<Login />} />
             </Routes>
          </Suspense>
       </div>
