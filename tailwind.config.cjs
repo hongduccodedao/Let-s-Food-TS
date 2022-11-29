@@ -8,6 +8,7 @@ module.exports = {
             yellow: "#ffcb45",
             orange: "#ffac4b",
             blackColor: "#1d1d1d",
+            colorInput: "#f5f5f5",
          },
          fontFamily: {
             readex: ["Readex Pro", "serif"]
